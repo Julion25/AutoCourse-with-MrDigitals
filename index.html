@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essai - MrDigitals</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="autocode-html">Basculer vers la page de cours HTML</a>
+    </header>
+    <h1>AutoCourse with MrDigitals</h1>
+    <hr />
+    <h2>Une liste avec des boutons</h2>
+    <div class="nav">
+      <select onchange="if (this.value) window.location.href = this.value;">
+        <option value="index.html">Home</option>
+        <br />
+        <option value="about.html">About</option>
+        <br />
+        <option value="blog.html">Blog</option>
+        <br />
+        <option value="contact.html">Contact</option>
+      </select>
+    </div>
+    <p>Déjà compris.</p>
+    <hr />
+    <h2>Un formulaire de dialogue</h2>
+    <button command="show-modal" commandfor="dialog">Open</button>
+    <dialog id="dialog">
+      This is dialog..
+      <button command="close" commandfor="dialog">Close</button>
+    </dialog>
+    <p>Pas toute à fait compris.</p>
+    <hr />
+    <h2>Petrol Fuel</h2>
+    Petrol Meter:
+
+    <meter value="50" min="0" max="100" low="33" high="66" optimum="80"></meter>
+    <p>Pas clairement.</p>
+    <hr />
+    <h2>Formulaire d'inscription</h2>
+    <form action="#" class="mon_formulaire">
+      <div class="nom">
+        <label for="mon-nom"><strong>Nom :</strong></label>
+        <input type="text" placeholder="Votre nom" id="mon-nom" />
+      </div>
+
+      <div class="age">
+        <label for="mon-age"><strong>Age :</strong></label>
+        <input type="number" placeholder="Votre age" id="mon-age" />
+      </div>
+
+      <div class="boutons">
+        <input type="reset" value="Réinitialiser" />
+        <input type="submit" value="Envoyer" />
+      </div>
+    </form>
+    <p>Déjà mais avec encore quelques difficultés.</p>
+    <hr />
+    <h2>Image transformé en polygone</h2>
+    <img src="./image.jpg" alt="mon-image" />
+    <p>Compris.</p>
+    <hr />
+    <h2>Les Transformation CSS</h2>
+    <!-- Transformation : RotateZ-->
+    <h3><i>Tansformation CSS RotateZ</i></h3>
+    <br />
+    <div class="containerZ">
+      <div class="boxZ"></div>
+    </div>
+    <br />
+    <p>Déjà compris.</p>
+    <br />
+    <br />
+    <hr />
+    <!-- Tansformation : RotateY-->
+    <h3><i>Transformation CSS RotateY</i></h3>
+    <div class="containerY">
+      <div class="boxY"></div>
+    </div>
+    <p>Déjà compris.</p>
+    <hr />
+    <!-- Tansformation : RotateX-->
+    <h3><i>Transformation CSS RotateX</i></h3>
+    <div class="containerX">
+      <div class="boxX"></div>
+    </div>
+    <p>Déjà compris.</p>
+    <hr />
+    <!--Choisir un fichier directement sur le PC-->
+    <h2>Choisir un fichier</h2>
+    <form class="formulaire">
+      Choisir votre fichier :
+      <br />
+      <label for="choose_file"><input type="file" /></label>
+    </form>
+    <p>Déjà compris.</p>
+    <hr />
+    <!--Formulaire du nom d'utilisateur et Mot de passe-->
+    <h2>Formulaire d'utilisateur</h2>
+    <form class="formulaire2" action="#">
+      Nom d'utilisateur :
+      <input type="text" placeholder="E-mail ou num. tel" />
+      <br />
+      Mot de passe :
+      <input type="password" placeholder="au moins 8 caractères" />
+    </form>
+    <p>Déjè compris.</p>
+    <hr />
+    <!--Grid Layout HTML & CSS in six levels-->
+    <h2>Basic grid layout in six levels</h2>
+    <ol>
+      <li>
+        <strong>Basic grid layout</strong>
+        <div class="grid-container">
+          <div class="Item">1</div>
+          <div class="Item">2</div>
+          <div class="Item">3</div>
+          <div class="Item">4</div>
+          <div class="Item">5</div>
+          <div class="Item">6</div>
+        </div>
+      </li>
+    </ol>
+    <hr />
+    <!-- hors du cours avec MrDigitals -->
+    <h2>Essai hors MrDigitals</h2>
+    <!-- Barre de navigation -->
+    <!-- <nav class="navbar">
+      <div class="container1">
+        <a href="index.html">LUXURY<span>STORE</span></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="">Acceuil</a>
+          </li>
+          <li>
+            <a href="about.html">A propos</a>
+          </li>
+          <li class="dropdown">
+            <a href="products.html"
+              >Produits <i class="fas fa-chevron-down"></i
+            ></a>
+          </li>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="products.html?category=sneakers">Sneakers</a>
+            </li>
+            <li>
+              <a href="products.html?category=smartphones">Smartphones</a>
+            </li>
+            <li>
+              <a href="products.html?category=accessories">Accessoires</a>
+            </li>
+          </ul>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="testimonials.html">Avis</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+          <li class="cart-icon">
+            <a href="#cart"
+              ><i class="fas fa-shopping-cart">
+                <span class="cart-count">0</span></i
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+	<!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LUXURY<span>STORE</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li class="dropdown">
+                    <a href="products.html">Produits <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html?category=sneakers">Sneakers</a></li>
+                        <li><a href="products.html?category=smartphones">Smartphones</a></li>
+                        <li><a href="products.html?category=accessories">Accessoires</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog/">Blog</a></li>
+                <li><a href="testimonials.html">Avis</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon">
+                    <a href="#cart"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  </body>
+</html>
